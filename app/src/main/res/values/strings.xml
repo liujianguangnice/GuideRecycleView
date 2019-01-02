@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">GuideRecycleView</string>
+    <!--空界面-->
+    <string name="tv_empty_msg">这里空空如也</string>
+    <string name="tv_empty_down">请放心，收到后第一时间通知您～</string>
+    <string name="tv_no_network_msg">网络出现问题，请检查一下网络。</string>
+    <string name="tv_refresh_msg">刷新</string>
+
+    <!--刷新界面-->
+    <string name="tv_refresh_pull_refreshing">下拉刷新</string>
+    <string name="tv_refresh_release_refreshing">松手刷新</string>
+    <string name="tv_refresh_refreshing">更新中…</string>
+    <string name="tv_refresh_succeed_refreshing">刷新成功</string>
+    <string name="tv_refresh_failed_refreshing">刷新失败</string>
+    <string name="tv_refresh_pull_loading">上拉加载更多</string>
+    <string name="tv_refresh_release_loading">释放立即加载</string>
+    <string name="tv_refresh_loading">加载中…</string>
+    <string name="tv_refresh_succeed_loading">加载成功</string>
+    <string name="tv_refresh_failed_loading">加载失败</string>
+
+</resources>

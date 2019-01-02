@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/root_view"
+    android:layout_marginBottom="@dimen/size_4dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/iv_station_icon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_110dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/video_control_offline"
+            />
+        <TextView
+            android:id="@+id/iv_station_icon_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_110dp"
+            android:background="@drawable/shape_video_item_bg"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_9dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_station_line_status"
+            android:layout_width="@dimen/size_30dp"
+            android:layout_height="@dimen/size_16dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/select_video_item_line"
+            android:gravity="center"
+            android:text="离线"
+            android:textColor="@color/selector_video_line_font"
+            android:textSize="@dimen/size_10dp" />
+
+        <TextView
+            android:id="@+id/tv_station_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/size_2dp"
+            android:layout_toLeftOf="@+id/tv_station_line_status"
+            android:ellipsize="end"
+            android:singleLine="true"
+            tools:text="默默站"
+            android:textColor="@color/gray_D8D8D8"
+            android:textSize="12dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_video_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_4dp"
+        tools:text="1号摄像头1号摄像头1号摄像头1号摄像头1号摄像头1号摄像头1号摄像头1号摄像头1号摄像头1号摄像头1号摄像头1号摄像头1号摄像头1号摄像头1号摄像头1号摄像头"
+        android:textColor="@color/gray_999999"
+        android:textSize="10dp"
+        />
+
+</LinearLayout>

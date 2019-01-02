@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/base_black_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="255dp"
+        android:layout_height="131dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/base_no_network_icon"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_43dp"
+        android:gravity="center"
+        android:text="@string/tv_no_network_msg"
+        android:textColor="#FF8F9095"
+        android:textSize="@dimen/size_13dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tv_error_view_refresh_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/size_25dp"
+            android:paddingStart="@dimen/size_25dp"
+            android:paddingTop="@dimen/size_5dp"
+            android:paddingBottom="@dimen/size_5dp"
+            android:text="@string/tv_refresh_msg"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:textSize="@dimen/size_13dp"
+            android:background="@drawable/shape_baseui_refresh"
+            />
+
+    </LinearLayout>
+</LinearLayout>
