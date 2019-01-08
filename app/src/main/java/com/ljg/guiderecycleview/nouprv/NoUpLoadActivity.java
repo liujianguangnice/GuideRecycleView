@@ -36,19 +36,21 @@ public class NoUpLoadActivity extends BaseActivity {
 
 
     private VideoOfflineDialog mOfflineDialog;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        initView();
-    }
+
 
     @Override
     protected int initLayout() {
         return R.layout.activity_no_up_load;
     }
 
+    @Override
+    protected void init() {
 
-    private void initView() {
+    }
+
+    @Override
+    protected void initView() {
+        super.initView();
         reFreshViewVideo.setOnPullListener(new MyPullRefresh());
         reFreshViewVideo.setPullUpEnable(false);
 

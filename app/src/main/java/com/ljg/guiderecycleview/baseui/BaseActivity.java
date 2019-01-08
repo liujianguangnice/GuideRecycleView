@@ -5,6 +5,7 @@ import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.view.View;
 
+import com.ljg.guiderecycleview.util.AppContextUtils;
 import com.ljg.guiderecycleview.util.StatusBarUtils;
 
 import butterknife.ButterKnife;
@@ -23,6 +24,12 @@ public abstract class BaseActivity extends CommonActivity {
         StatusBarUtils.translucent(this);
         ButterKnife.bind(this);
         thisActivity = this;
+        //必须在加载布局（setContentView）之后
+        AppContextUtils.init(this);
+        AppContextUtils.init(getBaseContext());
+
+        init();
+        initView();
     }
 
 
@@ -31,6 +38,24 @@ public abstract class BaseActivity extends CommonActivity {
      */
     protected abstract @LayoutRes
     int initLayout();
+
+    /**
+     * @return 初始化数据
+     */
+    protected void init() {
+
+    }
+    /**
+     * @return 初始化View
+     */
+    protected void initView() {
+
+    }
+
+
+    public BaseActivity getThisActivity() {
+        return thisActivity;
+    }
 }
 
 

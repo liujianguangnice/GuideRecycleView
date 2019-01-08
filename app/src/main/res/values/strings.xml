@@ -17,5 +17,7 @@
     <string name="tv_refresh_loading">加载中…</string>
     <string name="tv_refresh_succeed_loading">加载成功</string>
     <string name="tv_refresh_failed_loading">加载失败</string>
+    <string name="back"><![CDATA[<]]></string>
+    <string name="finish">X</string>
 
 </resources>
